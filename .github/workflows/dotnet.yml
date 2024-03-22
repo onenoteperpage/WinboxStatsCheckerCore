@@ -23,3 +23,8 @@ jobs:
       run: dotnet build --no-restore
     - name: Publish
       run: dotnet publish -c Release -r win-x64 --self-contained true /p:PublishSingleFile=true /p:IncludeNativeLibrariesForSelfExtract=true
+    - name: Publish Artifact
+      uses: actions/upload-artifact@v4.3.1
+      with:
+        name: wbscc
+        path: ./bin/Release/net8.0-windows/win-x64/publish/wbscc.exe
