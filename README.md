@@ -13,3 +13,5 @@ dotnet publish -c Release -r win-x64 --self-contained true /p:PublishSingleFile=
   Remove-Item -Path $_.FullName -Force -Confirm:$false
 }
 ```
+
+Requires Administrator prviliges to run.

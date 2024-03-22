@@ -22,7 +22,7 @@ namespace SystemInfoCore
             // Variables used globally
             string currentYearMonth = DateTime.Now.ToString("yyyyMM");
             string computerName = Environment.MachineName;
-            string dbName = $"{currentYearMonth}-{computerName}.db";
+            string dbName = $"{currentYearMonth}-{computerName}.sqlite";
 
             // Create SQLiteDB connection
             using (var connection = new SqliteConnection($"Data Source={dbName}"))
