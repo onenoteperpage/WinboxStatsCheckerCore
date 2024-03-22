@@ -15,3 +15,5 @@ dotnet publish -c Release -r win-x64 --self-contained true /p:PublishSingleFile=
 ```
 
 Requires Administrator prviliges to run.
+
+Output is a `.sqlite` file, that uses the convention of `<CURRENT DATE TIME>@<HOST NAME>.sqlite`
